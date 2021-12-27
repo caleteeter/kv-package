@@ -1,0 +1,24 @@
+{
+  "name": "@windozer/kv-package",
+  "version": "0.1.0",
+  "author": {
+    "name": "Cale Teeter",
+    "email": "cale.teeter@microsoft.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caleteeter/kv-package.git"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "clean": "rm -rf dist"
+  },
+  "main": "dist/index",
+  "typings": "dist/index",
+  "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ]
+}
